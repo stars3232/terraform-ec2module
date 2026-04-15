@@ -15,7 +15,7 @@ variable "instance_type" {
 
 variable "sg_ids" {
     type = list
-    description = list of security group id to be passed
+    description = "list of security group id to be passed"
 }
 
 variable "tags_Name" {
