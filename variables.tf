@@ -8,7 +8,7 @@ variable "instance_type" {
     default = "t2.micro"
 
     validation {
-        condition      = contains(["t2.micro","t3.small"],var.instance_type)
+        condition      = contains(["t2.micro","t3.micro"],var.instance_type)
         error_message  = "Please choose instance_type btw t2.micro or t3.micro"
     }
 
